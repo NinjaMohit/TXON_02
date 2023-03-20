@@ -1,0 +1,55 @@
+body::before {
+    content: "";
+background: url("https://thumbs.dreamstime.com/z/abstract-numbers-background-23906248.jpg") no-repeat center/cover;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#container {
+    border: 2px solid rgba(0, 0, 0, 0.163);
+    width: 300px;
+    height: 360px;
+    margin: 63px auto;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 8px;
+}
+
+#display {
+    font-size: 28px;
+    margin: 8px 8px;
+    padding: 8px 2px;
+    background-color: whitesmoke;
+    border-radius: 7px;
+}
+
+#numbers {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 5px;
+    justify-items: center;
+    margin-top: 37px;
+}
+
+.number:hover {
+    background-color: rgb(173, 203, 228);
+}
+
+.number {
+    width: 66px;
+    height: 49px;
+    font-size: 20px;
+    color: rgba(141, 9, 9, 0.518);
+    text-align: center;
+    background-color: rgb(225, 216, 117);
+    border-radius: 16px;
+}
+
+#b {
+    padding: 10px 63px;
+}
